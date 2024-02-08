@@ -1,0 +1,62 @@
+body
+{
+    
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+header
+{
+    background-color: orange;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.para1{
+    background-color: blue;
+    left:0px;;
+    right:0px;
+    width:150px;
+    height: 500px;
+    margin-top:0px; 
+    align-items: center;
+    display:flex;
+    position: fixed;
+}
+.para2{
+    background-color: antiquewhite;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+.para1 *{
+    display: block;
+}
+.para1 li{
+    margin: 30px;
+    text-align: center;
+}
+.para1 li a{
+    color: red;
+    text-decoration: wavy;
+}
+header *{
+    display: inline;
+}
+header li{
+    margin: 30px;
+    text-align: center;
+}
+header li a{
+    color: red;
+    text-decoration: wavy;
+}
+header li a:hover{
+    background-color: blue;
+}
+.para1 li a:hover{
+    background-color: blue; 
+}

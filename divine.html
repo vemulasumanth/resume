@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="show_more_menu('personalinformation')">Personal Information</a></li>
+                <li><a href="#" onclick="show_more_menu('overview')">Overview</a></li>
+                <li><a href="#" onclick="show_more_menu('Cocurricular')">Co-Curricular Activities </a></li>
+                <li><a href="#" onclick="show_more_menu('Education')">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="para1">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="show_more_menu('Skills')">Skills</a></li>
+                <li><a href="#" onclick="show_more_menu('WorkExperience')">Work Experience</a></li>
+                <li><a href="#" onclick="show_more_menu('PersonalProjects')">Personal Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="para2" id="con">
+    
+    </div>
+    <script>
+        function show_more_menu(page)
+        {
+        var cont=document.getElementById("con");
+        switch(page){
+            case "overview":
+            cont.innerHTML=`
+                <ul>
+                    <li>Diligent and dependable Software Engineer with a solid background in programming and adept problem-solving skills.</li>
+                    <li>Proficient in multiple programming languages and well-versed in utilizing various development tools.</li>
+                    <li>Experienced in Java Backend Web Development and well-acquainted with agile methodologies.</li>
+                `;
+            break;
+            case "Skills":
+            cont.innerHTML=`
+                    <h1>Tech Stack</h1>
+                    <p><b>Programming:</b> JAVA, Python, Data Structures and Algorithms</p>
+                    <p><b>FrameWorks:</b> Spring Boot, Spring MVC , Hibernate</p>
+                    <p><b>FrontEnd Tech:</b> HTML, CSS, JAVASCRIPT</p>
+                    <p><b>BackEnd Tech:</b> Micro Services, Rest API</p>
+                    <p><b>Tools/Ide:</b> Postman, IntelliJ, Docker</p>
+                    <p><b>Version Control:</b> Git</p>
+                    <p><b>Database:</b>  MySQL, SQL Server</p>
+                    <p><b>Cloud Tech:</b> AWS, GCP</p>  
+                `;
+            break;
+            case "personalinformation":
+            cont.innerHTML=`
+                    <h1>Personal Information</h1>
+                    <ul>
+                        <li><strong>Name:</strong> Sumanth Vemula</li>
+                        <li><strong>Email:</strong> vemulasumanth140500@gmail.com</li>
+                        <li><strong>Contact no:</strong> +91 9704673046</li>
+                        <li><strong>Native State:</strong> Andhra Pradesh</li>
+                    </ul>
+                `;
+            break;
+            case "Cocurricular":
+            cont.innerHTML=`
+                    <h1>Co-Curricular Activities</h1>
+                    <ul>
+                        <li>Been as NSS volunteer and participated in many NSS activities, SASTRA(2018-2020).</li>
+                    </ul>
+                `;
+            break;
+            case "Education":
+                cont.innerHTML=`
+                    <h1>Education</h1>
+                    <ul>
+                    <li><h2>BTech</h2>
+                    <p>Sastra Deemed To Be University － Thanjavur, Tamilnadu</p>
+                    <p>Grade: CGPA-7.56</p></li>
+                    <li><h3>Intermediate</h3>
+                    <p>Sri Vaishnavi Abhyaas Junior College － Guntur</p>
+                    <p>Grade: Percentage-97</p></li>
+                    <li><h3>SSC</h3>
+                    <p>Ravindra Bharathi School － Anantapur</p>
+                    <p>Grade: CGPA-9.7</p></li>
+                    </ul>
+                `;
+            break;
+            case "PersonalProjects":
+                cont.innerHTML=`
+                    <h2>Project</h2>
+                    <h3>Brain Tumor Segmentation, Classification and Survival Prediction</h3>
+                    <ul>
+                    <li><p>In this project we used MRI images as our input.We used UNET architecture for tumor segmentation.</p></li>
+                    <li><p>And output of segmentation will be used input for classification and it is done by Inception v3 architecture.Finally survival prediction is done by using CNN architecture.</p></li>
+                    </ul>
+                `;
+                break;
+            case "WorkExperience":
+                cont.innerHTML=`
+                    <h2>Work Experience</h2>
+                    <h3>Software Engineer</h3>
+                    <p><b>October 2022 to October 2023</b></p>
+                    <p><b>Accenture Solutions Pvt Ltd－ Bengaluru</b></p>
+                    <ul>
+                        <li>As a team we built a web application for a snacks and beverage company, in which consumers will be able to order their favorite beverage, make payment and get the QR code.</li>
+                        <li>This QR code acts as a digital key, enabling customers to effortlessly purchase their chosen drinks from vending machines.</li>
+                        <li>I designed and developed multiple robust and scalable APIs to meet project requirements.</li>
+                        <li>Utilized Java and Spring Boot framework to implement backend solutions.</li>
+                    </ul>
+                    <h3>Trainee</h3>
+                    <p><b>Accenture Solutions Pvt Ltd－ Bengaluru</b></p>
+                    <ul>
+                        <li>Accenture Training Case Study, Bangalore - Built an inventory management system as part of the Java Full Stack training with Accenture.</li>
+                        <li>This application efficiently retrieves crucial vendor and material data from microservices, facilitates seamless insertion of purchase details, and concurrently generates comprehensive reports.</li>
+                    </ul>
+                `;
+                break;
+            default:
+                cont.innerHTML="nothing";
+        }
+        }
+    </script>
+</body>
+</html> 
